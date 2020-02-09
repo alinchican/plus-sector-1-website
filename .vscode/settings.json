@@ -1,0 +1,7 @@
+{
+    "files.exclude": {
+        ".vscode": true,
+        ".yarn": true,
+        "build": true
+    }
+}

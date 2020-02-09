@@ -1,0 +1,107 @@
+/* purgecss start ignore */
+@tailwind base;
+@tailwind components;
+
+html {
+  @apply font-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.heading {
+  @apply font-sans;
+  @apply font-extrabold;
+  @apply text-4xl;
+}
+
+.title {
+  @apply font-sans;
+  @apply font-bold;
+  @apply text-3xl;
+}
+
+.subtitle {
+  @apply font-sans;
+  @apply font-semibold;
+  @apply text-2xl;
+}
+
+.button {
+  @apply inline-block;
+  @apply bg-brand-primary-orange;
+  @apply px-8;
+  @apply py-2;
+  @apply font-sans;
+  @apply font-semibold;
+  @apply text-lg;
+  @apply text-white;
+  @apply no-underline;
+  @apply text-center;
+  box-shadow: 0 3px 0 0 theme("colors.brand-secondary-red");
+}
+
+.button:active {
+  box-shadow: 0 1px 0 0 theme("colors.brand-secondary-red");
+  transform: translateY(2px);
+}
+
+.button:hover {
+  @apply text-white;
+  @apply no-underline;
+}
+
+a {
+  color: theme("colors.blue.800");
+  @apply underline;
+}
+
+a:hover {
+  color: theme("colors.brand-primary-orange");
+}
+
+p + p {
+  @apply mt-2;
+}
+
+.policy {
+  @apply mb-8;
+  @apply mx-auto;
+  @apply leading-relaxed;
+}
+
+.policy header {
+  @apply mb-5;
+  @apply p-4;
+  @apply bg-brand-gray-100;
+}
+
+.policy h3 {
+  @apply mt-6;
+  @apply mb-2;
+  @apply text-lg;
+  @apply font-bold;
+}
+
+.policy + .policy {
+  @apply mt-4;
+}
+.policy h2 {
+  @apply text-2xl;
+  @apply font-bold;
+}
+
+.policy ul {
+  @apply my-4;
+  @apply list-outside;
+  @apply list-disc;
+  @apply text-sm;
+  @apply ml-12;
+  @apply w-4/5;
+  @apply ml-10;
+}
+
+.policy li + li {
+  @apply mt-2;
+}
+
+@tailwind utilities;
+/* purgecss end ignore */
