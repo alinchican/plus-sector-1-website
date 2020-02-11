@@ -29,13 +29,12 @@ const config = {
     minifyOptions: {
       collapseWhitespace: true,
       removeComments: true,
-      removeOptionalTags: true,
-      removeRedundantAttributes: true,
-      removeScriptTypeAttributes: true,
-      removeTagWhitespace: true,
-      useShortDoctype: true,
-      minifyCss: true,
-      minifyJs: true
+      // removeOptionalTags: true,
+      // removeRedundantAttributes: true,
+      // removeScriptTypeAttributes: true,
+      // removeTagWhitespace: true,
+      // useShortDoctype: true,
+      // minifyJs: true
     }
   },
   metaTagImages: {
