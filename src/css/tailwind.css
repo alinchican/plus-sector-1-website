@@ -102,6 +102,6 @@ p + p {
 .policy li + li {
   @apply mt-2;
 }
+/* purgecss end ignore */
 
 @tailwind utilities;
-/* purgecss end ignore */

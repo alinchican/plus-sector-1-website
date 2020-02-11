@@ -11,7 +11,7 @@ module.exports = {
       ? [
           purgecss({
             // Specify the paths to all of the template files in your project
-            content: [`${config.html.inputPath}/*/*.html`],
+            content: [`${config.html.inputPath}/**/*.html`],
             // Include any special characters you're using in this regular expression
             defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || []
           }),

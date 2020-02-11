@@ -32,9 +32,10 @@ const config = {
       // removeOptionalTags: true,
       // removeRedundantAttributes: true,
       // removeScriptTypeAttributes: true,
-      // removeTagWhitespace: true,
-      // useShortDoctype: true,
-      // minifyJs: true
+      removeTagWhitespace: true,
+      useShortDoctype: true,
+      minifyJS: true,
+      minifyCSS: true
     }
   },
   metaTagImages: {
