@@ -9,13 +9,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://static.xx.fbcdn.net" crossorigin>
+  <link rel="preconnect" href="https://code.jquery.com" crossorigin>
+  <link rel="preconnect" href="https://finantare.asociatia-g2.ro" crossorigin>
 
   <meta name="title" content="PLUS Sector 1">
-  <meta name="description"
-    content="Vezi programul politic și candidații propuși. Sectorul 1, Sectorul secolului 21!">
+  <meta name="description" content="Vezi programul politic și candidații propuși. Sectorul 1, Sectorul secolului 21!">
 
   <meta property="og:type" content="website">
-<meta property="og:locale" content="ro_RO">
+  <meta property="og:locale" content="ro_RO">
   <meta property="og:url" content="https://sectorul1.plus">
   <meta property="og:title" content="PLUS Sector 1">
   <meta property="og:description"
@@ -134,7 +135,8 @@
             <div class="leading-tight mb-3 text-brand-primary-blue">
               <h4 class="font-sans font-extrabold text-3xl md:text-4xl">Diana
                 Buzoianu</h4>
-              <div class="font-sans font-bold text-xl leading-tight">Candidatul la Primăria Sectorului 1</div>
+              <div class="font-sans font-bold text-xl leading-tight">Susținută pentru funcția de Viceprimar al
+                Sectorului 1 în cadrul Alianței USR PLUS Sector 1</div>
             </div>
 
             <p class="text-lg">Am 25 de ani, sunt de profesie avocat cu specializare în drept comercial
@@ -203,7 +205,8 @@
 
         <div class="text-center mt-3">
           <a href="consilieri-locali-propusi.html"
-            class="button block w-full mt-1 px-4 py sm:inline-block sm:w-auto sm:px-8 sm:py-2 underline">Vezi profilurile
+            class="button block w-full mt-1 px-4 py sm:inline-block sm:w-auto sm:px-8 sm:py-2 underline">Vezi
+            profilurile
             candidaților</a>
         </div>
       </div>
@@ -535,10 +538,26 @@
       <div class="text-xl  font-sans font-bold">Donează ce ai în PLUS</div>
       <p class="leading-relaxed">O mișcare politică nouă are nevoie și de resurse financiare pentru a reuși!
         Orice donație este esențială pentru a crea un partid nou, puternic!</p>
-      <a href="https://www.ro.plus/donatie-plus?gij=sector1&campanie=1" target="_blank" rel="noopener noreferrer"
-        class="button block sm:inline-block mt-1 px-8 py-2 sm:w-auto underline mt-3">Donează</a>
+
+    </div>
+    <div id="payment-wrapper" class="mx-auto mt-6" style="max-width: 770px">
     </div>
   </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+  <script>
+    window.g2_finance_params = {
+      autoLoadDonationForm: true,
+      host: '#payment-wrapper',
+      reportProcessHandler: function (step) { console.log(step); },
+    };
+  </script>
+
+  <script type="text/javascript"
+    src="https://finantare.asociatia-g2.ro/external/ahJlfmcyLWNyb3dkLWZ1bmRpbmdyPwsSCEN1c3RvbWVyGICAgOSBz4YJDAsSCEN1c3RvbWVyGICAgIaV9KgKDAsSCENhbXBhaWduGICAgIaV9OgLDA.js">
+    </script>
 
   <script>
     var toggleNav = document.querySelector('.toggle-nav');
@@ -548,7 +567,6 @@
       nav.classList.toggle('hidden');
     }
   </script>
-
 </body>
 
 </html>
