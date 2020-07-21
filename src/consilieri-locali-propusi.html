@@ -599,7 +599,10 @@
         Orice donație este esențială pentru a crea un partid nou, puternic!</p>
 
     </div>
-    <div id="payment-wrapper" class="mx-auto mt-6" style="max-width: 770px">
+    <div id="payment-wrapper" class="mx-auto mt-6 text-center" style="max-width: 770px">
+      <a href="https://www.ro.plus/donatie-plus?gij=sector1&campanie=1" target="_blank" rel="noopener noreferrer"
+        class="donate-button button block sm:inline-block mt-1 px-8 py-2 sm:w-auto underline mt-3">Completează
+        formularul</a>
     </div>
   </div>
 
@@ -618,9 +621,14 @@
     };
   </script>
 
-  <script type="text/javascript"
-    src="https://finantare.asociatia-g2.ro/external/ahJlfmcyLWNyb3dkLWZ1bmRpbmdyPwsSCEN1c3RvbWVyGICAgOSBz4YJDAsSCEN1c3RvbWVyGICAgIaV9KgKDAsSCENhbXBhaWduGICAgIaV9OgLDA.js">
-    </script>
+  <script type="text/plain"
+    src="https://finantare.asociatia-g2.ro/external/ahJlfmcyLWNyb3dkLWZ1bmRpbmdyPwsSCEN1c3RvbWVyGICAgOSBz4YJDAsSCEN1c3RvbWVyGICAgIaV9KgKDAsSCENhbXBhaWduGICAgIaV9OgLDA.js"
+    cookie-consent="functionality">
+  </script>
+
+  <script type="text/plain" cookie-consent="functionality">
+    document.querySelector('.donate-button').style.display = 'none';
+  </script>
 
   <script>
     var toggleNav = document.querySelector('.toggle-nav');
